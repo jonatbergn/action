@@ -23,6 +23,7 @@ dependencies {
   implementation libs.androidx.constraintLayout
   implementation libs.androidx.fragment
   implementation libs.androidx.recyclerview
+  implementation libs.anko.common
 
   testImplementation libs.junit.junit
   testImplementation libs.kotlin.test

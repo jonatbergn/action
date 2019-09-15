@@ -7,6 +7,7 @@ ext.versions = [
     androidxFragment        : '1.0.0',
     androidxRecyclerview    : '1.0.0',
     androidxJunit           : '1.1.0',
+    anko                    : '0.10.8',
     junit                   : '4.12',
 ]
 
@@ -25,6 +26,9 @@ ext.libs = [
         fragment        : "androidx.fragment:fragment-ktx:$versions.androidxFragment",
         recyclerview    : "androidx.recyclerview:recyclerview:$versions.androidxRecyclerview",
         junit           : "androidx.test.ext:junit:$versions.androidxJunit",
+    ],
+    anko    : [
+        common: "org.jetbrains.anko:anko-common:$versions.anko",
     ],
     junit   : [
         junit: "junit:junit:$versions.junit",
