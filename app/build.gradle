@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+  compileSdkVersion 29
+  buildToolsVersion "29.0.2"
+  defaultConfig {
+    applicationId "com.jonathanbergen.actions"
+    minSdkVersion 21
+    targetSdkVersion 29
+    versionCode 1
+    versionName "1.0"
+    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+  }
+}
+
+dependencies {
+  implementation libs.kotlin.std
+  implementation libs.kotlinx.coroutinesCore
+  implementation libs.androidx.coreKtx
+  implementation libs.androidx.appcompat
+  implementation libs.androidx.constraintLayout
+  implementation libs.androidx.fragment
+  implementation libs.androidx.recyclerview
+
+  testImplementation libs.junit.junit
+  testImplementation libs.kotlin.test
+  testImplementation libs.androidx.junit
+}
